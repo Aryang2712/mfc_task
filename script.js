@@ -2,6 +2,7 @@
 let eventDate = new Date("March 10, 2026 10:00:00").getTime();
 
 let timer = setInterval(function () {
+
     let now = new Date().getTime();
     let distance = eventDate - now;
 
@@ -14,6 +15,7 @@ let timer = setInterval(function () {
         clearInterval(timer);
         document.getElementById("countdown").innerHTML = "Event Started!";
     }
+
 }, 1000);
 
 
@@ -46,7 +48,7 @@ phoneInput.addEventListener("input", function () {
         document.getElementById("phoneError").innerText =
             "Enter 10 digit number.";
     } else {
-        document.getElementById("phoneError").innerText = "";
+        document.getElementByById("phoneError").innerText = "";
     }
 });
 
@@ -62,6 +64,7 @@ deptInput.addEventListener("change", function () {
 
 // ===== Submit Event =====
 document.getElementById("registrationForm").addEventListener("submit", function (e) {
+
     e.preventDefault();
 
     if (
@@ -74,4 +77,5 @@ document.getElementById("registrationForm").addEventListener("submit", function 
         document.getElementById("successMessage").style.display = "block";
         document.getElementById("registrationForm").reset();
     }
+
 });
