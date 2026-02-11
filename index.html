@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Club Event Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Tech Club Event 2026</h1>
+</header>
+
+<nav>
+    <a href="#event">Event Details</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Event Section -->
+<section id="event">
+    <div class="container">
+        <h2>Event Details</h2>
+        <div class="event-box">
+            <p><strong>Event:</strong> Web Development Workshop</p>
+            <p><strong>Date:</strong> March 10, 2026</p>
+            <p><strong>Venue:</strong> Club Auditorium</p>
+            <p>Learn how to build your first website in this beginner-friendly workshop.</p>
+            <p id="countdown"></p>
+        </div>
+    </div>
+</section>
+
+<!-- Registration Section -->
+<section id="register">
+    <div class="container">
+        <h2>Registration Form</h2>
+
+        <form id="registrationForm">
+            <label>Full Name *</label>
+            <input type="text" id="name">
+            <div class="error" id="nameError"></div>
+
+            <label>Email *</label>
+            <input type="email" id="email">
+            <div class="error" id="emailError"></div>
+
+            <label>Phone Number *</label>
+            <input type="text" id="phone">
+            <div class="error" id="phoneError"></div>
+
+            <label>Department *</label>
+            <select id="department">
+                <option value="">Select Department</option>
+                <option>CSE</option>
+                <option>IT</option>
+                <option>ECE</option>
+                <option>Mechanical</option>
+            </select>
+            <div class="error" id="deptError"></div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+            Registration Successful! 🎉 See you at the event.
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Info</h2>
+        <p>Email: techclub@college.edu</p>
+        <p>Phone: +91 9876543210</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Tech Club | All Rights Reserved</p>
+</footer>
+
+<!-- Link JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
